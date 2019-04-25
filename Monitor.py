@@ -62,7 +62,8 @@ class Monitor(threading.Thread):
                 try:
                     print("Stopping {}".format(c[0]))
                     container = self.dockr.containers.get(str(c[0]))
-                except docker.errors.NotFound:
+                except docker.errors.APIError:
+                    self.dockr = docker.from_env()
                     print("Job is already stopped or never existed")
 
                 # stop and remove container
