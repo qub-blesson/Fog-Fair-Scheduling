@@ -13,14 +13,17 @@ In order to run EFS please follow the steps below:
     ```bash
     chmod +x install.sh
     ```
+    
 2. Run the install script
     ```bash
     ./install.sh
     ```
+    
     Linux might complain that there are Windows characters present in the script. In this case run:
     ```bash
     sed -i -e 's/\r$//' install.sh; ./install.sh
     ```
+    
 3. Configure the config.ini within /root/EFS as you desire. Default provided config explained below:
     ```bash
     [SERVER]
