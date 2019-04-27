@@ -39,19 +39,20 @@ In order to run EFS please follow the steps below:
     portupper = 19999
     strategy = 0
     ```
-    - **host** – The IP address to bind the socket to. Leave as 0.0.0.0 to bind to all edge node addresses\
-    - **port** – The port number used for EFS communication\
-    - **maxqueue** – The maximum number of jobs allowed to be in the queue\
+    - **host** – The IP address to bind the socket to. Leave as 0.0.0.0 to bind to all edge node addresses
+    - **port** – The port number used for EFS communication
+    - **maxqueue** – The maximum number of jobs allowed to be in the queue
     - **basecpu** – The amount of CPU required by the base service. One core is equal to the value set in 
-                 maxcpu\
-    - **basemem** – The amount of RAM memory required by the base service in megabytes\
-    - **maxcpu** – The CPU scheduler period, best left default as 100 microseconds (100000)\
+                 maxcpu
+    - **basemem** – The amount of RAM memory required by the base service in megabytes
+    - **maxcpu** – The CPU scheduler period, best left default as 100 microseconds (100000)
     - **cpuunit** – The value of a single CPU unit which will be assigned to each Docker containers. In this 
-                the value corresponds to half a core since 50000/100000 = 0.5\
+                the value corresponds to half a core since 50000/100000 = 0.5
     - **memunit**– The value of a single RAM memory unit which will be assigned to each Docker
-                  container in megabytes\
-    - **portlower** – Denotes the start of the range of ports which can be used for the containers\
-    - **portupper** – Denotes the last value of the range of ports which can be used for the containers\
+                  container in megabytes
+    - **portlower** – Denotes the start of the range of ports which can be used for the containers
+    - **portupper** – Denotes the last value of the range of ports which can be used for the containers
+    - **strategy** – Indicates the scheduling strategy to use. The values to use are: 0 for First Come First Served, 1 for Client Fair, 2 for Priority Fair and 3 for Hybrid
     
 4. Generate the server certificate
     ```bash
