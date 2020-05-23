@@ -4,6 +4,9 @@ Edge computing aims to bring data processing closer to the edge of the network. 
 
 This is a developing research project and some features might not be stable yet.
 
+# Cite this research
+A. Madej, N. Wang, N. Athanasopoulos, R. Ranjan, and B. Varghese, "[Priority-based Fair Scheduling in Edge Computing](https://pureadmin.qub.ac.uk/ws/portalfiles/portal/199226899/PriorityBasedFairScheduling.pdf)," Proceedings of the IEEE International Conference on Fog and Edge Computing (ICFEC), 2020. 
+
 # License
 All source code, documentation, and related artifacts associated with the EFS open source project are licensed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
 
